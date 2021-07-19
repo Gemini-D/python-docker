@@ -1,0 +1,17 @@
+name: Build Python Image
+
+on: [ push ]
+
+jobs:
+  build:
+    name: Build Image
+    runs-on: 'ubuntu-latest'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Build Docker
+        run: |
+          docker build . -t python-docker
+          docker login docker.pkg.github.com -u limingxinleo -p ${{ secrets.GITHUB_TOKEN }}
+          docker tag python-docker:latest docker.pkg.github.com/gemini-d/python-docker/python-docker:latest
+          docker push docker.pkg.github.com/gemini-d/python-docker/python-docker:latest
