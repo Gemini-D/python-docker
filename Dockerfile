@@ -8,6 +8,8 @@ RUN set -ex \
   && pip3 install --upgrade -i https://mirrors.aliyun.com/pypi/simple pip \
   && pip install pymysql \
   && pip install pandas \
+  && pip install sqlalchemy \
+  && pip install datetime \
    # ---------- clear works ----------
   && apk del .build-deps \
   && rm -rf /var/cache/apk/* /tmp/* /usr/share/man \
