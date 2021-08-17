@@ -10,6 +10,7 @@ RUN set -ex \
   && pip install pandas \
   && pip install sqlalchemy \
   && pip install datetime \
+  && pip install time \
    # ---------- clear works ----------
   && apk del .build-deps \
   && rm -rf /var/cache/apk/* /tmp/* /usr/share/man \
