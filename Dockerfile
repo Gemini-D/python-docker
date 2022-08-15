@@ -11,6 +11,10 @@ RUN set -ex \
   && pip install sqlalchemy \
   && pip install datetime \
   && pip install requests \
+  
+  && pip install html-table \
+  && pip install yagmail \
+  && pip install pyecharts \
    # ---------- clear works ----------
   && apk del .build-deps \
   && rm -rf /var/cache/apk/* /tmp/* /usr/share/man \
