@@ -12,9 +12,6 @@ jobs:
       - name: Build Docker
         run: |
           docker build . -t python-docker
-          docker login docker.pkg.github.com -u limingxinleo -p ${{ secrets.GITHUB_TOKEN }}
-          docker tag python-docker:latest docker.pkg.github.com/gemini-d/python-docker/python-docker:latest
-          docker push docker.pkg.github.com/gemini-d/python-docker/python-docker:latest
-          docker login -u limingxinleo -p ${{ secrets.DOCKERHUB_TOKEN }}
+          docker login -u chenglin0 -p ${{ secrets.DOCKERHUB_TOKEN }}
           docker tag python-docker:latest limingxinleo/python-docker:latest
           docker push limingxinleo/python-docker:latest
