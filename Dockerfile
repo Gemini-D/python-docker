@@ -15,6 +15,7 @@ RUN set -ex \
   && pip install yagmail \
   && pip install pyecharts \
   && pip install jieba \
+  && pip install numpy \
    # ---------- clear works ----------
   && apk del .build-deps \
   && rm -rf /var/cache/apk/* /tmp/* /usr/share/man \
