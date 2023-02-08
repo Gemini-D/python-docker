@@ -11,6 +11,7 @@ RUN set -ex \
   && pip install sqlalchemy \
   && pip install datetime \
   && pip install requests \
+  && pip install jieba \
    # ---------- clear works ----------
   && apk del .build-deps \
   && rm -rf /var/cache/apk/* /tmp/* /usr/share/man \
