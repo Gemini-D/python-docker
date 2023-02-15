@@ -16,6 +16,8 @@ RUN set -ex \
   && pip install pyecharts \
   && pip install jieba \
   && pip install numpy \
+  && pip install snownlp \
+
    # ---------- clear works ----------
   && apk del .build-deps \
   && rm -rf /var/cache/apk/* /tmp/* /usr/share/man \
