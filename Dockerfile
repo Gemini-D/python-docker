@@ -17,6 +17,8 @@ RUN set -ex \
   && pip install jieba \
   && pip install numpy \
   && pip install snownlp \
+  && pip install scipy \
+  && pip install sklearn \
 
    # ---------- clear works ----------
   && apk del .build-deps \
