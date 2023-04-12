@@ -20,6 +20,7 @@ RUN set -ex \
   && pip install scipy \
   && pip install sklearn \
 
+
    # ---------- clear works ----------
   && apk del .build-deps \
   && rm -rf /var/cache/apk/* /tmp/* /usr/share/man \
