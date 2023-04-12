@@ -6,6 +6,7 @@ RUN set -ex \
   && apk add openssh libstdc++ \
   && apk add --no-cache --virtual .build-deps python3-dev g++ \
   && pip3 install --upgrade -i https://mirrors.aliyun.com/pypi/simple pip \
+  && pip install cython \
   && pip install pymysql \
   && pip install pandas \
   && pip install sqlalchemy \
