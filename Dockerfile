@@ -17,7 +17,7 @@ RUN set -ex \
   && pip install jieba \
   && pip install numpy \
   && pip install snownlp \
-  && pip install scipy \
+  && pip install -i https://pypi.tuna.tsinghua.edu.cn/simple scipy \
   && pip install sklearn \
 
 
