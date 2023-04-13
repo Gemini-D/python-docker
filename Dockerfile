@@ -18,9 +18,11 @@ RUN set -ex \
   && pip install jieba \
   && pip install numpy \
   && pip install snownlp \
-  && pip install scipy \
+#  && pip install scipy \
   && pip install sklearn \
-  && pip install apscheduler\
+  && pip install apscheduler \
+  && pip install loguru \
+  && pip install sqlalchemy \
 
 
    # ---------- clear works ----------
