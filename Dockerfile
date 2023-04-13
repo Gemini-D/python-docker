@@ -18,7 +18,7 @@ RUN set -ex \
   && pip install jieba \
   && pip install numpy \
   && pip install snownlp \
-#  && pip install -i https://mirrors.aliyun.com/pypi/simple scipy==0.19.1 \
+  && pip install scipy \
   && pip install sklearn \
   && pip install apscheduler\
 
