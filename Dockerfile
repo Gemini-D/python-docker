@@ -18,7 +18,7 @@ RUN set -ex \
   && pip install jieba \
   && pip install numpy \
   && pip install snownlp \
-  && pip install Matplotlib \
+#  && pip install Matplotlib \
   && pip install scipy==1.6.0 \
   && pip install sklearn \
   && pip install apscheduler \
