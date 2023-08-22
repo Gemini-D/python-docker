@@ -24,6 +24,7 @@ RUN set -ex \
   && pip install apscheduler \
   && pip install loguru \
   && pip install sqlalchemy \
+  && pip install pymongo \
 
 
    # ---------- clear works ----------
