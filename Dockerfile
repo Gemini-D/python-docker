@@ -19,8 +19,8 @@ RUN pip install jieba
 RUN pip install numpy 
 RUN pip install snownlp 
 #  && pip install Matplotlib 
-RUN pip install scipy==1.6.0
-RUN pip install sklearn
+#RUN pip install scipy==1.6.0
+#RUN pip install sklearn
 RUN pip install apscheduler
 RUN pip install loguru
 RUN pip install sqlalchemy
